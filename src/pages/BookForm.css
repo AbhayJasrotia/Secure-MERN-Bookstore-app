@@ -1,0 +1,87 @@
+.book-form-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.book-form-container {
+  width: 100%;
+  max-width: 600px;
+  animation: slideUp 0.5s ease;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-icon {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.form-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.book-form {
+  margin-bottom: 24px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.form-actions .btn {
+  flex: 1;
+  justify-content: center;
+}
+
+.auth-required {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  gap: 16px;
+}
+
+.auth-required svg {
+  color: var(--primary);
+  opacity: 0.3;
+}
+
+.auth-required h2 {
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.auth-required p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .book-form-container {
+    max-width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-header h1 {
+    font-size: 28px;
+  }
+}
